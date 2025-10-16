@@ -1,0 +1,105 @@
+/* Edit Task Modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.input {
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  font-size: 16px;
+}
+
+.textarea {
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.select {
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.cancelButton {
+  padding: 10px 16px;
+  background: #f0f0f0;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+}
+
+.cancelButton:focus {
+  outline: none;
+}
+
+.submitButton {
+  padding: 10px 16px;
+  background: #4CAF50;
+  color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+}
+
+.submitButton:focus {
+  outline: none;
+}
+
+.submitButton:disabled {
+  background: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+

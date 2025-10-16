@@ -1,0 +1,108 @@
+/* Task Filter Component */
+.filterContainer {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filterSection {
+  margin-bottom: 16px;
+}
+
+.filterSection:last-child {
+  margin-bottom: 0;
+}
+
+.filterTitle {
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  padding: 8px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.filterButton:focus {
+  outline: none;
+}
+
+.filterButton:hover {
+  border-color: #667eea;
+  color: #667eea;
+  transform: translateY(-1px);
+}
+
+.filterButton.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Priority-specific button colors */
+.filterButton.high {
+  border-color: #ffcdd2;
+}
+
+.filterButton.high:hover {
+  border-color: #f44336;
+  color: #f44336;
+}
+
+.filterButton.high.active {
+  background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+  border-color: #f44336;
+  color: #ffffff;
+}
+
+.filterButton.medium {
+  border-color: #fff9c4;
+}
+
+.filterButton.medium:hover {
+  border-color: #ffc107;
+  color: #f57c00;
+}
+
+.filterButton.medium.active {
+  background: linear-gradient(135deg, #ffc107 0%, #f57c00 100%);
+  border-color: #ffc107;
+  color: #ffffff;
+}
+
+.filterButton.low {
+  border-color: #c8e6c9;
+}
+
+.filterButton.low:hover {
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+.filterButton.low.active {
+  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+  border-color: #4caf50;
+  color: #ffffff;
+}
+
